@@ -1,0 +1,24 @@
+*{padding: 0;margin: 0;}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    background-color: pink;
+}
+
+.grid {
+    flex: 0 0 calc(100% / 20); /* Each square takes 1/20th of the width */
+    height: calc(100% / 20);   /* Each square takes 1/20th of the height */
+    border: 1px solid black;  /* Optional border to distinguish squares */
+    box-sizing: border-box;
+    transition: background-color 0.55s ease-out; /* Smooth transition effect */
+}
+
+.grid:hover {
+    background-color: black; /* Change background on hover */
+}
